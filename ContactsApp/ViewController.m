@@ -1,14 +1,8 @@
-//
-//  ViewController.m
-//  ContactsApp
-//
-//  Created by Riaan on 2015/05/06.
-//  Copyright (c) 2015 Riaan. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 @end
 
@@ -16,12 +10,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.firstNameLabel.text = @"Arthur";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onMyButtonTapped:(id)sender {
+    
 }
 
 @end

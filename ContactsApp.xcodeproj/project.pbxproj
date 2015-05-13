@@ -15,6 +15,8 @@
 		C095D6431AFA4FEE00D0C68D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C095D6421AFA4FEE00D0C68D /* Images.xcassets */; };
 		C095D6461AFA4FEE00D0C68D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C095D6441AFA4FEE00D0C68D /* LaunchScreen.xib */; };
 		C095D6521AFA4FEF00D0C68D /* ContactsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C095D6511AFA4FEF00D0C68D /* ContactsAppTests.m */; };
+		C0A58AE11B01DEAA00A3EFF0 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A58AE01B01DEAA00A3EFF0 /* Contact.m */; };
+		C0A58AE31B02476200A3EFF0 /* ContactTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A58AE21B02476200A3EFF0 /* ContactTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		C095D64B1AFA4FEF00D0C68D /* ContactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C095D6501AFA4FEF00D0C68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C095D6511AFA4FEF00D0C68D /* ContactsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsAppTests.m; sourceTree = "<group>"; };
+		C0A58AE01B01DEAA00A3EFF0 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		C0A58AE21B02476200A3EFF0 /* ContactTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTest.m; sourceTree = "<group>"; };
+		C0A58AE41B024B4100A3EFF0 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,9 @@
 				C095D6441AFA4FEE00D0C68D /* LaunchScreen.xib */,
 				C095D6391AFA4FEE00D0C68D /* ContactsApp.xcdatamodeld */,
 				C095D6321AFA4FEE00D0C68D /* Supporting Files */,
+				C0A58AE01B01DEAA00A3EFF0 /* Contact.m */,
+				C0A58AE21B02476200A3EFF0 /* ContactTest.m */,
+				C0A58AE41B024B4100A3EFF0 /* Contact.h */,
 			);
 			path = ContactsApp;
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 			files = (
 				C095D63B1AFA4FEE00D0C68D /* ContactsApp.xcdatamodeld in Sources */,
 				C095D6381AFA4FEE00D0C68D /* AppDelegate.m in Sources */,
+				C0A58AE11B01DEAA00A3EFF0 /* Contact.m in Sources */,
 				C095D63E1AFA4FEE00D0C68D /* ViewController.m in Sources */,
 				C095D6351AFA4FEE00D0C68D /* main.m in Sources */,
 			);
@@ -233,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A58AE31B02476200A3EFF0 /* ContactTest.m in Sources */,
 				C095D6521AFA4FEF00D0C68D /* ContactsAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,8 +364,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContactsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -364,8 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContactsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -422,6 +436,7 @@
 				C095D6571AFA4FEF00D0C68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C095D6581AFA4FEF00D0C68D /* Build configuration list for PBXNativeTarget "ContactsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +445,7 @@
 				C095D65A1AFA4FEF00D0C68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
