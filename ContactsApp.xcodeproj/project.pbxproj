@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00E48191B03BB1000C1FFA8 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00E48181B03BB1000C1FFA8 /* ContactsViewController.m */; };
 		C095D6351AFA4FEE00D0C68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C095D6341AFA4FEE00D0C68D /* main.m */; };
 		C095D6381AFA4FEE00D0C68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C095D6371AFA4FEE00D0C68D /* AppDelegate.m */; };
 		C095D63B1AFA4FEE00D0C68D /* ContactsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C095D6391AFA4FEE00D0C68D /* ContactsApp.xcdatamodeld */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C00E48171B03BB1000C1FFA8 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		C00E48181B03BB1000C1FFA8 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		C095D62F1AFA4FEE00D0C68D /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C095D6331AFA4FEE00D0C68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C095D6341AFA4FEE00D0C68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				C0A58AE01B01DEAA00A3EFF0 /* Contact.m */,
 				C0A58AE21B02476200A3EFF0 /* ContactTest.m */,
 				C0A58AE41B024B4100A3EFF0 /* Contact.h */,
+				C00E48171B03BB1000C1FFA8 /* ContactsViewController.h */,
+				C00E48181B03BB1000C1FFA8 /* ContactsViewController.m */,
 			);
 			path = ContactsApp;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C095D63B1AFA4FEE00D0C68D /* ContactsApp.xcdatamodeld in Sources */,
+				C00E48191B03BB1000C1FFA8 /* ContactsViewController.m in Sources */,
 				C095D6381AFA4FEE00D0C68D /* AppDelegate.m in Sources */,
 				C0A58AE11B01DEAA00A3EFF0 /* Contact.m in Sources */,
 				C095D63E1AFA4FEE00D0C68D /* ViewController.m in Sources */,
