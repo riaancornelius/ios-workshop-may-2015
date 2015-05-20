@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contact.h"
+
+@protocol ContactViewDelegate;
+
+@protocol ContactViewDelegate <NSObject>
+
+- (void)contactDidUpdate:(Contact *)contact;
+
+@end
 
 @interface ViewController : UIViewController
-
-
+@property (weak) id<ContactViewDelegate> delegate;
 @end
 

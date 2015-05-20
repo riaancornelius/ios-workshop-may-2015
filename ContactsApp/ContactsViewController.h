@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface ContactsViewController : UITableViewController
-
+@interface ContactsViewController : UITableViewController <ContactViewDelegate>
+@property (nonatomic) NSArray *contacts;
 @end

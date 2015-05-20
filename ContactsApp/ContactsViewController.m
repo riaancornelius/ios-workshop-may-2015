@@ -7,22 +7,26 @@
 //
 
 #import "ContactsViewController.h"
-
-@interface ContactsViewController ()
-@property (nonatomic) NSArray *contacts;
-@end
+#import "Contact.h"
 
 @implementation ContactsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.contacts = @[@"First", @"Second"];
+    Contact *contact1 = [Contact contactWithFirstName:@"Riaan" andLastName:@"Cornelius"];
+    Contact *contact2 = [Contact contactWithFirstName:@"Arthur" andLastName:@"Dent"];
+    self.contacts = @[contact1, contact2];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (void)contactDidUpdate:(Contact *)contact {
+    NSLog(@"Contact was updated");
+}
+
 
 #pragma mark - Table view data source
 
@@ -32,10 +36,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"contactsCell" forIndexPath:indexPath];
-    cell.detailTextLabel.text = @"...";
-    cell.textLabel.text = [self.contacts objectAtIndex:indexPath.row];
+    Contact *contact = [self.contacts objectAtIndex:indexPath.row];
+    cell.textLabel.text = contact.fullName;
     
     return cell;
+}
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    ViewController *viewController = [segue destinationViewController];
+//    *viewController.delegate = self;
+    
+    
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
 
 /*
@@ -83,11 +97,7 @@
 /*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
+
 */
 
 @end
